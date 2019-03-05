@@ -1,0 +1,23 @@
+{
+  "name": "javascriptactivities",
+  "version": "1.0.0",
+  "description": "Random JavaScript instructional materials",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renielcanlas/JavaScriptActivities.git"
+  },
+  "keywords": [
+    "javascript",
+    "activities"
+  ],
+  "author": "Ranielle Canlas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renielcanlas/JavaScriptActivities/issues"
+  },
+  "homepage": "https://github.com/renielcanlas/JavaScriptActivities#readme"
+}
