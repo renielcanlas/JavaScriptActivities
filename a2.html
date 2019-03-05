@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>JavaScript Activities</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Activity 1: String Manipulations - Anagram</h1>
+        <a href="index.html" class="text-primary">Go back to list</a>
+        <p>
+            An anagram is a word or phrase formed by rearranging the letters of a 
+            different word or phrase, typically using all the original letters 
+            exactly once. For example, the word <span class="badge badge-dark">anagram</span> can be rearranged into 
+            <span class="badge badge-dark">nag a ram</span>, or the word <span class="badge badge-primary">binary</span>
+             into <span class="badge badge-primary">brainy</span>.
+        </p>
+        <ul>
+            <li>Create 2 input boxes and a button</li>
+            <li>Upon clicking the button, a message will show whether the words are anagram or not</li>
+            <li>If they are anagram, the message should be green otherwise, red</li>
+            <li>The function must accept values with at least 3 characters</li>
+            <li>Punctuations, special characters, and spaces must be discarded</li>
+            <li>Must not be case sensitive</li>
+        </ul>
+        <div class="border border-primary">
+            <table class="table tabled-bordered table-hover table-sm">
+                <caption>Test Cases</caption>
+                <thead>
+                    <tr>
+                        <th>Text 1</th>
+                        <th>Text 2</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Anagram</td>
+                        <td>Nag a ram</td>
+                        <td class="text-success">TRUE</td>
+                    </tr>
+                    <tr>
+                        <td>Restful</td>
+                        <td>Fluster</td>
+                        <td class="text-success">TRUE</td>
+                    </tr>
+                    <tr>
+                        <td>Adultery</td>
+                        <td>True Lady</td>
+                        <td class="text-success">TRUE</td>
+                    </tr>
+                    <tr>
+                        <td>Brainy</td>
+                        <td>Binary</td>
+                        <td class="text-success">TRUE</td>
+                    </tr>
+                    <tr>
+                        <td>Area11</td>
+                        <td>AR11EA</td>
+                        <td class="text-success">TRUE</td>
+                    </tr>
+                    <tr>
+                        <td>Fudge</td>
+                        <td>Grudge</td>
+                        <td class="text-danger">FALSE</td>
+                    </tr>
+                    <tr>
+                        <td>Lot</td>
+                        <td>Toll</td>
+                        <td class="text-danger">FALSE</td>
+                    </tr>
+                    <tr>
+                        <td>Fast</td>
+                        <td>Staff</td>
+                        <td class="text-danger">FALSE</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h2>Anagram Analyzer</h2>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Text 1</span>
+            </div>
+            <input id="text1" type="text" class="form-control">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Text 2</span>
+            </div>
+            <input id="text2" type="text" class="form-control">
+        </div>
+        <button onclick="analyze()" class="btn btn-primary">Analyze</button><br><br>
+        <div class="alert alert-primary" role="alert">
+            Enter texts and click Analyze
+        </div>
+        <br>
+        <hr>
+        <br>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/anagram.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>JavaScript Activities</title>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Activity 1: Simple Array</h1>
+        <a href="index.html" class="text-primary">Go back to list</a>
+        <ul>
+            <li>Create an empty array</li>
+            <li>Create a input field and a button</li>
+            <li>Upon clicking the button, the value on the input field should be added in the empty array</li>
+            <li>The values of the array must be presented inside a <code>&lt;select&gt;</code> element with attribute <code>multiple</code></li>
+            <li>The function should not accept blank input</li>
+            <li>The array and list should only contain unique values</li>
+            <li>Create 2 buttons with labels "longest" & "shortest"</li>
+            <li>Upon clicking the longest button, an alert box should show the longest word in the list</li>
+            <li>If there are multiple items with the same length as the longest, the output should be the item added lastly on the list</li>
+            <li>Upon clicking the shortest button, an alert box should show the shortest word in the list</li>
+            <li>If there are multiple items with the same length as the shortest, the output should be the item added first on the list</li>
+            <li>Create a Sort button with label "Sort [a-z]" that will sort alphabetically the contents of the array and the list</li>
+            <li>Upon sorting to [a-z] the label for sort button must be changed to "Sort [z-a] and upon clicking, the sorting must be reversed</li>
+            <li>Create remove button that will remove the selected item from the list and from the array object.</li>
+            <li>The remove must be working with multiple selections</li>
+            <li>Create a clear button that will remove all items from both list and array</li>
+            <li>If there are no entries in the list, other buttons must be disabled</li>
+        </ul>
+        <div class="input-group">
+            <input id="item" type="text" placeholder="array-item">
+            <div class="input-group-append">
+                <button id="btnAdd" class="btn btn-outline-secondary" onclick="addItem()">Add</button>
+                <button id="btnLongest" disabled class="btn btn-outline-secondary" onclick="longest()">Longest</button>
+                <button id="btnShortest" disabled class="btn btn-outline-secondary" onclick="shortest()">Shortest</button>
+                <button id="btnSort" disabled class="btn btn-outline-secondary" onclick="sortList()">Sort [a-z]</button>
+                <button id="btnRemove" disabled class="btn btn-outline-secondary" onclick="remove()">Remove</button>
+                <button id="btnClear" disabled class="btn btn-outline-secondary" onclick="clearList()">Clear</button>
+            </div>
+        </div>
+        <select id="list" class="custom-select" multiple>
+
+        </select>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
