@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/renielcanlas/JavaScriptActivities/issues"
   },
-  "homepage": "https://github.com/renielcanlas/JavaScriptActivities#readme"
+  "homepage": "https://github.com/renielcanlas/JavaScriptActivities#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
 }
